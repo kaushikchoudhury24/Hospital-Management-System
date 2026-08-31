@@ -1,31 +1,23 @@
-# Hospital-Management-System
-Use Case
-You are developing a Hospital Management System to store and manage patient records. Each patient has the following details:
+class Patient:
+    def __init__(self, name, age, disease):
+        
+        self.name = name
+        self.age = age
+        self.disease = disease
 
-Name (e.g., "John Doe")
-
-Age (e.g., 45)
-
-Disease (e.g., "Diabetes")
-
-Currently, patient details need to be stored and retrieved in an organized manner. To improve scalability and reusability, the system should transition to an object-oriented approach, where each patient is represented as an object.
-
-
-Problem Description
-Implement a Patient class that:
-
-Uses an __init__ constructor to initialize patient attributes (name, age, disease).
-
-Defines a method display_info() to print patient details in a structured format.
-
-Creates three patient objects and calls display_info() on each to display their information.
+    def display_info(self):
+        
+        print(f"Patient: {self.name}, Age: {self.age}, Disease: {self.disease}")
+        
+         
 
 
-Task
-Create a Patient class with attributes: name, age, and disease.
 
-Implement an __init__ constructor to initialize patient details.
+patient1 = Patient("John Doe", 45, "Diabetes")
+patient2 = Patient("Jane Smith", 30, "Hypertension")
+patient3 = Patient("Emily Clark", 25, "Asthma")
 
-Define a method display_info() to print patient details.
 
-Create three patient objects and call display_info() on each.
+patient1.display_info()
+patient2.display_info()
+patient3.display_info()
